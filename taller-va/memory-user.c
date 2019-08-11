@@ -1,12 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <unistd.h>
+#include <sys/types.h>
 
 int main(int argc, char *argv[]) {
 	int tiempo;
 	long cantidadMem;
 
-	
+	printf("mi PID es: %d\n",getpid());
 	if(argc < 4 && argc > 1){
 
 		cantidadMem = (atol(argv[1]))*1000000;
